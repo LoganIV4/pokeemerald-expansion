@@ -282,7 +282,7 @@
     },
     {
       "id": "MAPSEC_ROUTE_120",
-      "name": "ROUTE 120",
+      "name": "Lilycove Lake",
       "x": 13,
       "y": 0,
       "width": 1,
@@ -1097,7 +1097,7 @@
     },
     {
       "id": "MAPSEC_LIPTOO_CHAMBER",
-      "name": "LIPTOO CHAMBER"
+      "name": "Lilycove Lake"
     },
     {
       "id": "MAPSEC_WEEPTH_CHAMBER",
@@ -1230,6 +1230,10 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_LILYCOVE_LAKE",
+      "name": "LILYCOVE LAKE"
     }
   ]
 }
