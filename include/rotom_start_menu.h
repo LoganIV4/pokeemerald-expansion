@@ -23,6 +23,18 @@ many thanks to them for creating this public resource.
 It will need to be added to your project in order to use
 this if not already:
     https://github.com/huderlem/pokeemerald/tree/comfy_anims
+After doing so, there is one other custom function that I created
+to be used by the menu, so in the file `comfy_anim.c` you must add:
+    u32 GetEasingComfyAnim_CurrentFrame(struct ComfyAnim *anim)
+    {
+        switch (anim->config.type)
+        {
+            default: return 0;
+            case COMFY_ANIM_TYPE_EASING: return anim->state.easingState.curFrame;
+        }
+    }
+And in `comfy_anim.h` you must add:
+    u32 GetEasingComfyAnim_CurrentFrame(struct ComfyAnim *anim);
 
 Additional credit must go to Phantonomy for creating the
 various coloured palettes for the phones, and helping with
