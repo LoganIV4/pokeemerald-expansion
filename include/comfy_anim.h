@@ -97,6 +97,7 @@ void InitComfyAnim_Easing(struct ComfyAnimEasingConfig *config, struct ComfyAnim
 void InitComfyAnim_Spring(struct ComfyAnimSpringConfig *config, struct ComfyAnim *out);
 u32 CreateComfyAnim_Easing(struct ComfyAnimEasingConfig *config);
 u32 CreateComfyAnim_Spring(struct ComfyAnimSpringConfig *config);
+u32 GetEasingComfyAnim_CurrentFrame(struct ComfyAnim *anim);
 void ReleaseComfyAnim(u32 comfyAnimId);
 void ReleaseComfyAnims(void);
 int ReadComfyAnimValueSmooth(struct ComfyAnim *anim);

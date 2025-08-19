@@ -32,7 +32,6 @@ static void AdvanceComfyAnim_Easing(struct ComfyAnim *anim)
     if (anim->state.easingState.curFrame >= config->durationFrames)
         anim->completed = TRUE;
 }
-
 // These precisions and velocity thresholds are higher than one would typically use in modern-day applications. Since
 // the GBA doesn't support sub-pixel rendering (i.e. things can only be drawn on the screen at whole-integer coordinates),
 // when the spring is nearing its completion state, it will be prone to resulting in single-pixel oscillations, or extra
@@ -196,7 +195,28 @@ u32 CreateComfyAnim_Spring(struct ComfyAnimSpringConfig *config)
     InitComfyAnim_Spring(config, anim);
     return i;
 }
+    u32 GetEasingComfyAnim_CurrentFrame(struct ComfyAnim *anim)
 
+
+    {
+
+
+        switch (anim->config.type)
+
+
+        {
+
+
+            default: return 0;
+
+
+            case COMFY_ANIM_TYPE_EASING: return anim->state.easingState.curFrame;
+
+
+        }
+
+
+    }
 void ReleaseComfyAnim(u32 comfyAnimId)
 {
     if (comfyAnimId < NUM_COMFY_ANIMS)
