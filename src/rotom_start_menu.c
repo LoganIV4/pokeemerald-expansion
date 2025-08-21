@@ -2622,7 +2622,7 @@ static void RotomPhone_RotomRealityMenu_SetupCB(void)
     case 5:
         sRotomPhone_StartMenu->menuRotomRealityPanelY = 0;
         sRotomPhone_StartMenu->menuRotomRealityPanelOpen = FALSE;
-        for (enum RotomPhone_RotomReality_Options rotomRealityOptions = RP_OW_OPTION_1; rotomRealityOptions < RP_RR_OPTION_COUNT; rotomRealityOptions++)
+        for (enum RotomPhone_RotomReality_Options rotomRealityOptions = RP_RR_OPTION_1; rotomRealityOptions < RP_RR_OPTION_COUNT; rotomRealityOptions++)
         {
             sRotomPhone_StartMenu->menuRotomRealityIconSpriteId[rotomRealityOptions] = SPRITE_NONE;
         }
