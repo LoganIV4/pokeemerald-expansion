@@ -1160,3 +1160,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/lilycove_Lake/scripts.inc"
+
+	.include "data/maps/FallarborCliffs/scripts.inc"
