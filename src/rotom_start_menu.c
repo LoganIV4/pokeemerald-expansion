@@ -2247,7 +2247,7 @@ static void RotomPhone_StartMenu_DoCleanUpAndDestroyTask(u8 taskId, bool32 overw
 
 static void Task_RotomPhone_StartMenu_WaitSaveGame(u8 taskId)
 {
-    if (!FuncIsActiveTask(SaveGameTask) && !RotomPhone_StartMenu_IsRotomReality())
+    if (!FuncIsActiveTask(SaveGameTask) && gMain.callback2 != RotomPhone_RotomRealityMenu_SaveScreen_MainCB)
     { 
         ClearDialogWindowAndFrameToTransparent(0, TRUE);
         ScriptUnfreezeObjectEvents();
@@ -2255,7 +2255,7 @@ static void Task_RotomPhone_StartMenu_WaitSaveGame(u8 taskId)
         SoftResetInBattlePyramid();
         DestroyTask(taskId);
     }
-    else if (!FuncIsActiveTask(SaveGameTask) && RotomPhone_StartMenu_IsRotomReality())
+    else if (!FuncIsActiveTask(SaveGameTask) && gMain.callback2 == RotomPhone_RotomRealityMenu_SaveScreen_MainCB)
     {
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
         gTasks[taskId].func = Task_RotomPhone_SaveScreen_WaitFadeAndExit;
