@@ -22,6 +22,11 @@
       "map": "MAP_ROUTE113",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_FALLARBOR_CLIFFS",
+      "offset": -8,
+      "direction": "up"
     }
   ],
   "object_events": [

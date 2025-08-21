@@ -44,8 +44,8 @@
     {
       "id": "LAYOUT_FORTREE_CITY",
       "name": "FortreeCity_Layout",
-      "width": 40,
-      "height": 20,
+      "width": 45,
+      "height": 25,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/FortreeCity/border.bin",
@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/lilycove_Lake/border.bin",
       "blockdata_filepath": "data/layouts/lilycove_Lake/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALLARBOR_CLIFFS",
+      "name": "FallarborCliffs_Layout",
+      "width": 35,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/FallarborCliffs/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborCliffs/map.bin"
     }
   ]
 }

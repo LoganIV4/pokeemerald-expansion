@@ -1234,6 +1234,10 @@
     {
       "id": "MAPSEC_LILYCOVE_LAKE",
       "name": "Lilycove Lake"
+    },
+    {
+      "id": "MAPSEC_FALLARBOR_CLIFFS",
+      "name": "Fallarbor Cliffs"
     }
   ]
 }
