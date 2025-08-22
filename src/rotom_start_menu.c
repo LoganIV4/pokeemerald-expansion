@@ -1818,6 +1818,9 @@ static enum RotomPhone_Overworld_Messages RotomPhone_OverworldMenu_GetRandomMess
 
 static void RotomPhone_OverworldMenu_CheckUpdateMessage(u8 taskId)
 {
+	if (tRotomUpdateMessage == RP_MESSAGE_TIME)
+		tRotomUpdateMessage = RP_MESSAGE_SAFARI;
+
     if (!tRotomUpdateTimer && RP_CONFIG_USE_ROTOM_PHONE)
     {
         switch (tRotomUpdateMessage)
