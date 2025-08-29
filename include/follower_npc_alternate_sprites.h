@@ -15,13 +15,15 @@ static const struct FollowerNPCSpriteGraphics gFollowerNPCAlternateSprites[] =
 {
     {
         .normalId = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL,
-        .bikeId = OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE,
+        .machBikeId = OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE,
+        .acroBikeId = OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE,
         .surfId = OBJ_EVENT_GFX_RIVAL_MAY_SURFING,
         .underwaterId = OBJ_EVENT_GFX_MAY_UNDERWATER,
     },
     {
         .normalId = OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL,
-        .bikeId = OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE,
+        .machBikeId = OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE,
+        .acroBikeId = OBJ_EVENT_GFX_RIVAL_BRENDAN_ACRO_BIKE,
         .surfId = OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING,
         .underwaterId = OBJ_EVENT_GFX_BRENDAN_UNDERWATER,
     },
