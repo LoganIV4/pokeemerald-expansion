@@ -673,6 +673,7 @@ LilycoveCity_Harbor_EventScript_BoardFerryWithSailor::
 # 337 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	hideobjectat LOCALID_PLAYER, 0
 # 338 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	hideplayer
 	setvar VAR_0x8004, LOCALID_LILYCOVE_HARBOR_SS_TIDAL
 # 339 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	call Common_EventScript_FerryDepart
@@ -793,6 +794,7 @@ LilycoveCity_Harbor_EventScript_BoardFerry::
 # 397 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	hideobjectat LOCALID_PLAYER, 0
 # 398 "data/maps/LilycoveCity_Harbor/scripts.pory"
+	hideplayer
 	setvar VAR_0x8004, LOCALID_LILYCOVE_HARBOR_SS_TIDAL
 # 399 "data/maps/LilycoveCity_Harbor/scripts.pory"
 	call Common_EventScript_FerryDepart

@@ -319,6 +319,7 @@ LittlerootTown_EventScript_GoInsideWithMom::
 # 160 "data/maps/LittlerootTown/scripts.pory"
 	hideobjectat LOCALID_PLAYER, 0
 # 161 "data/maps/LittlerootTown/scripts.pory"
+	hideplayer
 	closedoor VAR_0x8004, VAR_0x8005
 # 162 "data/maps/LittlerootTown/scripts.pory"
 	waitdooranim

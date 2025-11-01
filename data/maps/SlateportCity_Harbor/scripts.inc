@@ -463,6 +463,7 @@ SlateportCity_Harbor_EventScript_BoardFerry::
 # 232 "data/maps/SlateportCity_Harbor/scripts.pory"
 	hideobjectat LOCALID_PLAYER, 0
 # 233 "data/maps/SlateportCity_Harbor/scripts.pory"
+	hideplayer
 	setvar VAR_0x8004, LOCALID_SLATEPORT_HARBOR_SS_TIDAL
 # 234 "data/maps/SlateportCity_Harbor/scripts.pory"
 	call Common_EventScript_FerryDepart
